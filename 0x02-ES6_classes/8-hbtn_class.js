@@ -25,11 +25,11 @@ export default class HolbertonClass {
     else throw new Error('Location must be a string');
   }
 
-  valueof() {
+  valueOf() {
     return this.size;
   }
 
-  tostring() {
+  toString() {
     return this.location;
   }
 }
