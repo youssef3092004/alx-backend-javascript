@@ -3,7 +3,7 @@ import Car from './10-car';
 export default class EVCar extends Car {
   constructor(brand, motor, color, range) {
     super(brand, motor, color);
-    this.range = range;
+    this._range = range; // Store the range in the underscore-prefixed version
   }
 
   get range() {
@@ -11,10 +11,15 @@ export default class EVCar extends Car {
   }
 
   set range(newRange) {
-    if (typeof newRange === 'string') { this._range = newRange; } else throw new Error('Range must be a string');
+    if (typeof newRange === 'string') {
+      this._range = newRange;
+    } else {
+      throw new Error('Range must be a string');
+    }
   }
 
   cloneCar() {
-    return new EVCar(this.brand, this.motor, this.color, this.range);
+    // Return an instance of Car instead of EVCar
+    return new Car(this._brand, this._motor, this._color);
   }
 }
