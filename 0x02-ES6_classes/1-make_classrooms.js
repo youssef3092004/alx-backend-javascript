@@ -20,9 +20,5 @@ import Classroom from './0-classroom';
  */
 export default function initializeRooms() {
   // Create an array with three Classroom instances, each with the specified size
-  return [
-    new Classroom(19),
-    new Classroom(15),
-    new Classroom(10),
-  ];
+  return [19, 20, 34].map((size) => new ClassRoom(size));
 }
