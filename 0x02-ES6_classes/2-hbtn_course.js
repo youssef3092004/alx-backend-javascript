@@ -1,8 +1,8 @@
 export default class HolbertonCourse {
-    constructor(name, length, students) {
-    this.name = name;
-    this.length = length;
-    this.students = students;
+  constructor(name, length, students) {
+    this.name = name; // This will call the setter for name
+    this.length = length; // This will call the setter for length
+    this.students = students; // This will call the setter for students
   }
 
   get name() {
@@ -18,14 +18,14 @@ export default class HolbertonCourse {
   }
 
   get length() {
-    return this.length;
+    return this._length; // Corrected to return the private variable _length
   }
 
   set length(newLength) {
-    if (typeof newLength === 'string') {
+    if (typeof newLength === 'number') { // Assuming length should be a number
       this._length = newLength;
     } else {
-      throw new TypeError('Length must be a string');
+      throw new TypeError('Length must be a number'); // Updated error message
     }
   }
 
