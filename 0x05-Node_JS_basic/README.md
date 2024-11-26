@@ -19,8 +19,18 @@ This project covers the basics of Node.js, including modules, file system operat
 ├── README.md
 ├── package.json
 ├── index.js
-└── modules
-    └── exampleModule.js
+├── .babelrc
+├── .eslintrc.js
+├── babel.config.js
+├── 0-console.js
+├── 1-stdin.js
+├── 2-read_file.js
+├── 3-read_file_async.js
+├── 4-http.js
+├── 5-http.js
+├── 6-http_express.js
+├── 7-http_express.js
+└── utils.js
 ```
 
 ## Usage
@@ -41,5 +51,46 @@ This project covers the basics of Node.js, including modules, file system operat
     node index.js
     ```
 
+## Files
+
+### 0-console.js
+Contains the `displayMessage` function to log messages to the console.
+
+### 1-stdin.js
+Reads user input from STDIN and displays it.
+
+### 2-read_file.js
+Counts and groups students by field from a CSV file.
+
+### 3-read_file_async.js
+Asynchronously counts and groups students by field from a CSV file.
+
+### 4-http.js
+Creates a basic HTTP server to respond with a greeting.
+
+### 5-http.js
+Adds routing logic to the HTTP server.
+
+### 6-http_express.js
+Creates a basic Express server to respond with a greeting.
+
+### 7-http_express.js
+Adds error handling and response logic to the Express server.
+
+### utils.js
+Contains the `readDatabase` function to read and group students from a database.
+
+### .babelrc
+Babel configuration file.
+
+### .eslintrc.js
+ESLint configuration file.
+
+### babel.config.js
+Babel configuration file.
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 ## Author
-- GitHub Copilot
+Joe404
