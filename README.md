@@ -11,57 +11,45 @@ This repository contains various exercises and projects focused on ES6 features,
 - [Usage](#usage)
 - [License](#license)
 
-## 0x00-ES6_basic
+## 0x03-ES6_data_structures
 
-Basic exercises for understanding core ES6 features, such as `const`, `let`, arrow functions, string interpolation, spread operators, and loops.
-
-### Files:
-- **0-constants.js**: Demonstrates usage of `const` in ES6.
-- **1-block-scoped.js**: Illustrates block-scoped variables using `let`.
-- **2-arrow.js**: Introduction to arrow functions.
-- **3-default-parameter.js**: Use of default function parameters.
-- **4-rest-parameter.js**: Examples of rest parameters in functions.
-- **5-spread-operator.js**: Demonstrating spread operators.
-- **6-string-interpolation.js**: String interpolation with template literals.
-- **7-getBudgetObject.js**: Creating simple objects.
-- **8-getBudgetCurrentYear.js**: Dynamic object keys.
-- **9-getFullBudget.js**: Combining objects using the spread operator.
-- **10-loops.js**: Usage of `for...of` loops.
-- **11-createEmployeesObject.js**: Function that creates employee objects.
-- **12-createReportObject.js**: Function that builds a report object.
-
-## 0x01-ES6_promise
-
-Exercises focused on promises and async behavior in JavaScript.
+Exercises focused on new data structures introduced in ES6, such as Maps, Sets, and WeakMaps.
 
 ### Files:
-- **0-promise.js**: Basic usage of ES6 promises.
-- **1-promise.js**: Handling multiple promises.
-- **2-then.js**: Chaining `.then()` for promise resolution.
-- **3-all.js**: Using `Promise.all()` to wait for multiple promises.
-- **4-user-promise.js**: Creating promises that resolve user data.
-- **5-photo-reject.js**: Handling rejected promises.
-- **6-final-user.js**: Using promises for async user fetching.
-- **7-load_balancer.js**: Resolving race conditions with promises.
-- **8-try.js & 9-try.js**: Trying async/await handling.
-- **100-await.js**: Advanced usage of `async/await`.
+- **0-map.js**: Basic usage of Maps.
+- **1-set.js**: Basic usage of Sets.
+- **2-weakmap.js**: Introduction to WeakMaps.
+- **3-weakset.js**: Introduction to WeakSets.
+- **4-iterable.js**: Making objects iterable.
+- **5-advanced-map.js**: Advanced Map operations.
+- **6-advanced-set.js**: Advanced Set operations.
 
-## 0x02-ES6_classes
+## 0x04-ES6_modules
 
-Exercises related to ES6 classes, inheritance, and object-oriented programming.
+Exercises related to ES6 modules, import/export syntax, and modular programming.
 
 ### Files:
-- **0-classroom.js**: Basic class creation and usage.
-- **1-make_classrooms.js**: Advanced class creation and factory functions.
-- **2-hbtn_course.js**: Classes with custom properties and methods.
-- **3-currency.js**: Class example for handling currency.
-- **4-pricing.js**: Pricing object with composition.
-- **5-building.js**: Example of class inheritance.
-- **6-sky_high.js**: Using super() with child classes.
-- **7-airport.js**: Advanced class examples with getters and setters.
-- **8-hbtn_class.js**: Additional class and object manipulation.
-- **9-hoisting.js**: Understanding hoisting in ES6 classes.
-- **10-car.js & 100-evcar.js**: Working with vehicle classes and inheritance.
+- **0-module.js**: Basic module creation and usage.
+- **1-import.js**: Importing functions from modules.
+- **2-export.js**: Exporting functions and variables.
+- **3-default-export.js**: Using default exports.
+- **4-named-export.js**: Using named exports.
+- **5-reexport.js**: Re-exporting from modules.
+- **6-dynamic-import.js**: Dynamic imports in ES6.
+
+## 0x05-Node_JS_basic
+
+Exercises focused on basic Node.js concepts and usage.
+
+### Files:
+- **0-setup.js**: Setting up a Node.js project.
+- **1-http.js**: Creating a basic HTTP server.
+- **2-modules.js**: Understanding Node.js modules.
+- **3-file-system.js**: Working with the file system.
+- **4-events.js**: Using the events module.
+- **5-streams.js**: Working with streams.
+- **6-async.js**: Asynchronous programming in Node.js.
+
 
 ## Installation
 
@@ -69,3 +57,23 @@ To install the necessary dependencies for the project, run the following command
 
 ```bash
 npm install
+```
+```
+
+## Usage
+
+To run the exercises, use the following commands:
+
+```bash
+node path/to/file.js
+```
+
+For example, to run the `0-constants.js` file in the `0x00-ES6_basic` directory, use:
+
+```bash
+node 0x00-ES6_basic/0-constants.js
+```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
